@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <title>RecuLleida inici</title>
+    <meta charset="utf-8">
+
+    <link rel="icon" href="./img/favicon.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+
+    <link rel="shortcut icon" href="./img/favicon.png"/>
+    <link rel="apple-touch-icon" href="./img/favicon.png"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Menu Superior -->
+<header class="container-fluid navbar-fixed-top">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img class="navbar-brand navbar-center" style="margin-right: 10px; padding: 0;" alt="Reculleida" src="./img/Logo.png">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="#">Inici</a></li>
+                    <li><a href="./sobre.html">Sobre RecuLleida</a></li>
+                    <li><a href="./socis.html">Socis</a></li>
+                    <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Serveis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Recollida Selectiva</a></li>
+                            <li><a href="">Ferralla</a></li>
+                            <li><a href="">Fracció resta</a></li>
+                            <li><a href="">Fracció Orgànica</a></li>
+                            <li><a href="">Envasos</a></li>
+                            <li><a href="">Recollida</a></li>
+                            <li><a href="">Deixalleria mobil</a></li>
+                            <li><a href="">Serveis Comercials</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./noticies.html">Noticies</a></li>
+                    <li><a href="./contacte.html">Contacte</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="disabled"><a href="#">Borsa de treball</a></li>
+                    <li><a href="./maquinaria.html">Maquinaria</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Usuari Demo</b> <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li><a href="">Configuració</a></li>
+                            <li><a href="">Dades personals</a></li>
+                            <li><a href="">Baixa</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="">Administració web</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="submit" onclick="location='./index.html'" class="btn btn-primary btn-block">Desconnectar</button>
+                                        <br>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--  Principal, Noticies, Socis -->
+<div class="container-fluid text-left">
+    <!-- Noticies -->
+    <aside class="col-sm-2 left">
+        <div class="well navbar">
+            <p><h3>Noticies</h3>
+            <article id="noticia1" class="noticia well">
+                <h4><span>Titular de la notícia</span></h4>
+                <h5> Subtítol de la notícia</h5>
+                <h6>dd - mm - yyyy</h6>
+            </article>
+            <article id="noticia2" class="noticia well">
+                <h4>Web RecuLleida</h4>
+                <h5>Inaguració 2017</h5>
+                <h6>19 - 06 - 2017</h6>
+            </article>
+            <article id="noticia3" class="noticia well">
+                <h4>Reunió Mossos</h4>
+                <h5>Reculleida i els Mossos acorden una col·laboració</h5>
+                <h6>15 - 03 - 2016</h6>
+            </article>
+        </div>
+    </aside>
+    <!-- Contingut central -->
+    <main class="col-sm-8 content">
+        <div>
+
+            <img class="media-object"  src="./img/Logo.png" height="150px" alt="logo">
+            <h1>RecuLleida</h1>
+            <p>Reculleida és una associació creada al 1996, sense anim de lucre, que agrupa a les empreses de Lleida que es dediquen a recuperar el paper, cartó, fusta, ferro, plastic, desballestament de vehicles i electrodomestics, entre altres per al seu posterior reciclatge.</p>
+
+
+        </div>
+
+
+    </main>
+    <!-- Socis -->
+    <aside class="col-sm-2 right">
+
+        <div class="well navbar">
+            <h3>Asociats</h3>
+            <div class="well">
+                <p>Asociación Shalom</p>
+            </div>
+            <div class="well">
+                <p>Compost Segriá</p>
+            </div>
+            <div class="well">
+                <p>Desguaces Gualda</p>
+            </div>
+            <div class="well">
+                <p>Ramon Vilella</p>
+            </div>
+            <div class="well">
+                <p>Lloses de recuperacions</p>
+            </div>
+            <div class="well">
+                <p>Recuperacions Corbella</p>
+            </div>
+            <div class="well" onclick="location.href='./marquina.html'">
+                <p>Chatarras y desguaces Marquina</p>
+            </div>
+        </div>
+
+    </aside>
+
+</div>
+<!-- Peu de pàgina -->
+<footer class="container-fluid text-center navbar-fixed-bottom">
+    <p>Reculleida S.L. Avda Prat de la Riba, 34 25004, lleida</p>
+    <p>Tel 973 236849</p>
+    <p>&copy; Tots els drets reservats.</p>
+</footer>
+<script src="./js/main.js"></script>
+</body>
+</html>

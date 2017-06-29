@@ -1,0 +1,45 @@
+<div class="well">
+                    <p>Asociación Shalom</p>
+                </div>
+                <div class="well">
+                    <p>Compost Segriá</p>
+                </div>
+                <div class="well">
+                    <p>Desguaces Gualda</p>
+                </div>
+                <div class="well">
+                    <p>Ramon Vilella</p>
+                </div>
+                <div class="well">
+                    <p>J. Vilella Felip</p>
+                </div>
+                <div class="well">
+                    <p>Lloses de recuperacions</p>
+                </div>
+                <div class="well">
+                    <p>Recuperacions Corbella</p>
+                </div>
+                <div class="well">
+                    <p>Recuperacions Romeu</p>
+                </div>
+                <div class="well">
+                    <p>Chatarras y desguaces Marquina</p>
+                </div>
+                <div class="well">
+                    <p>Desguaces Abello-Gonzalez</p>
+                </div>
+                <div class="well">
+                    <p>Desguaces y chatarras Pedros</p>
+                </div>
+                <div class="well">
+                    <p>Carlos Garcia Paniza</p>
+                </div>
+                <div class="well">
+                    <p>Lajo y Rodriguez</p>
+                </div>
+                <div class="well">
+                    <p>Recanvis La Pleta</p>
+                </div>
+                <div class="well">
+                    <p>Recuperacions R. Valles</p>
+                </div>

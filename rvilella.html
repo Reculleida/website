@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <title>Marquina RecuLleida</title>
+    <meta charset="utf-8">
+
+    <link rel="icon" href="./img/favicon.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+
+    <link rel="shortcut icon" href="./img/favicon.png"/>
+    <link rel="apple-touch-icon" href="./img/favicon.png"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+</head>
+<body>
+<!-- Menu Superior -->
+<header class="container-fluid navbar-fixed-top">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img class="navbar-brand navbar-center" style="margin-right: 10px; padding: 0;" alt="Reculleida" src="./img/Logo.png">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="./index.html">Inici</a></li>
+                    <li><a href="./sobre.html">Sobre RecuLleida</a></li>
+                    <li role="presentation" class="dropdown active"><a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Socis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./socis.html">Llistat</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="active"><a href="">Ramon Vilella</a></li>
+                            <li><a href="#">Desguaces Pedros</a></li>
+                            <li><a href="#">Vilella recicla</a></li>
+                            <li><a href="./marquina.html">Desguaces Marquina</a></li>
+                            <li><a href="#">Lloces recuperacions</a></li>
+                            <li><a href="#">Desguaces Abellò</a></li>
+                            <li><a href="#">Recuperacions Romeu</a></li>
+                            <li><a href="#">Shalom</a></li>
+
+                        </ul>
+                    </li>
+                    <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Serveis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Recollida Selectiva</a></li>
+                            <li><a href="">Ferralla</a></li>
+                            <li><a href="">Fracció resta</a></li>
+                            <li><a href="">Fracció Orgànica</a></li>
+                            <li><a href="">Envasos</a></li>
+                            <li><a href="">Recollida</a></li>
+                            <li><a href="">Deixalleria mobil</a></li>
+                            <li><a href="">Serveis Comercials</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="./noticies.html">Noticies</a></li>
+                    <li><a href="./contacte.html">Contacte</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><p class="navbar-text">Ets soci ?</p></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Iniciar Sessi&oacute;</b> <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        Iniciar Sessi&oacute; amb
+                                        <div class="social-buttons">
+                                            <a href="./privat.html" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                            <a href="./privat.html" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                        </div>
+                                        o
+                                        <form class="form" method="post" action="" accept-charset="UTF-8" id="login-nav">
+                                            <div class="form-group">
+                                                <label class="sr-only" >Correu electr&ograve;nic</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Correu electr&ograve;nic" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only">Contrasenya</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contrasenya" required>
+                                                <div class="help-block text-right"><a href="">Recuperar contrasenya</a></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" onclick="location='./privat.html'" class="btn btn-primary btn-block">Acceptar</button>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Mant&eacute;n-me connectat
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="bottom text-center">
+                                        Nou ? <a href="#"><b>Uneix-te a nosaltres</b></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--  Principal, Noticies, Socis -->
+<div class="container-fluid text-left">
+    <!-- Contingut central -->
+    <main class="col-sm-8 col-sm-offset-2 content">
+        <div class="row">
+            <div  class="col-sm-4 pull-right col-xs-12">
+                <div style="border:none" class="thumbnail">
+                    <img src="./img/socis/ramonVilella.jpg" height="50%" alt="Desguaces Marquina">
+                </div>
+            </div>
+            <div class="col-sm-8 col-xs-12 text-center">
+                <h1>Ramon Vilella</h1>
+                <h3>Empresa</h3>
+                <p>L'empresa, fundada en 1945, basa la seva activitat en la gestió i transport de residus industrials inerts o perillosos, en tot l'estat espanyol. Tots els processos es realitzessin amb respecte màxim pel medi ambient i seguint, escrupolosament, la legislació vigent.</p>
+                <h3>Serveis</h3>
+                <ul class="text-left">
+                    <li><a href="">Compra de ferralla i metalls.</a></li>
+                    <li><a href="">Desballestament de vehicles.</a></li>
+                    <li><a href="">Destrucció de documents.</a></li>
+                    <li><a href="">Demolició d'estructures</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-xs-12">
+                <h3>Contacte</h3>
+                <p>Políg. Ind. "Camí dels Frares" C/F - LLEIDA</p>
+                <p>Coreu electrònic: <a href="mailto:'vilella@ramonvilella.com">vilella@ramonvilella.com</a></p>
+                <p>Telèfon:<a href="tel:'+34973201578'">973 20 15 78</a></p>
+            </div>
+            <div class="col-sm-8 col-xs-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.979772858263!2d0.6726781158696303!3d41.61294907924407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a6e0b3a030f383%3A0x942e7f0a0237b631!2sPol%C3%ADgon+Industrial+Cam%C3%AD+dels+Frares%2C+18%2C+25190+Lleida!5e0!3m2!1sca!2ses!4v1498062553130"  frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <div class="navbar-left">
+                    <a href="./socis.html" class="btn btn-primary text-left" role="button">Socis</a>
+                    <a href="http://www.ramonvilella.com" target="_blank" class="btn btn-default text-left" role="button">Web</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<!-- Peu de pàgina -->
+<footer class="container-fluid text-center navbar-fixed-bottom">
+    <p>Reculleida S.L. Avda Prat de la Riba, 34 25004, lleida</p>
+    <p>Tel 973 236849</p>
+    <p>&copy; Tots els drets reservats.</p>
+</footer>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+</body>
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+</html>

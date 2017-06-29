@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <title>RecuLleida Maquinària</title>
+    <meta charset="utf-8">
+
+    <link rel="icon" href="./img/favicon.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+
+    <link rel="shortcut icon" href="./img/favicon.png"/>
+    <link rel="apple-touch-icon" href="./img/favicon.png"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Menu Superior -->
+<header class="container-fluid navbar-fixed-top">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img class="navbar-brand navbar-center" style="margin-right: 10px; padding: 0;" alt="Reculleida" src="./img/Logo.png">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="./privat.html">Inici</a></li>
+                    <li><a href="./sobre.html">Sobre RecuLleida</a></li>
+                    <li role="presentation" class="dropdown"><a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Socis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./socis.html">Llistat</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li ><a href="./rvilella.html">Ramon Vilella</a></li>
+                            <li><a href="#">Desguaces Pedros</a></li>
+                            <li><a href="#">Vilella recicla</a></li>
+                            <li><a href="./marquina.html">Desguaces Marquina</a></li>
+                            <li><a href="#">Lloces recuperacions</a></li>
+                            <li><a href="#">Desguaces Abellò</a></li>
+                            <li><a href="#">Recuperacions Romeu</a></li>
+                            <li><a href="#">Shalom</a></li>
+
+                        </ul>
+                    </li>
+                    <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Serveis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Recollida Selectiva</a></li>
+                            <li><a href="">Ferralla</a></li>
+                            <li><a href="">Fracció resta</a></li>
+                            <li><a href="">Fracció Orgànica</a></li>
+                            <li><a href="">Envasos</a></li>
+                            <li><a href="">Recollida</a></li>
+                            <li><a href="">Deixalleria mobil</a></li>
+                            <li><a href="">Serveis Comercials</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./noticies.html">Noticies</a></li>
+                    <li><a href="./contacte.html">Contacte</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="disabled"><a href="#">Borsa de treball</a></li>
+                    <li class="active"><a href="#">Maquinaria</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Usuari Demo</b> <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li><a href="">Configuració</a></li>
+                            <li><a href="">Dades personals</a></li>
+                            <li><a href="">Baixa</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="">Administració web</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="submit" onclick="location='./index.html'" class="btn btn-primary btn-block">Desconnectar</button>
+                                        <br>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--  Principal, Noticies, Socis -->
+<div class="container-fluid text-left">
+
+    <!-- Contingut central -->
+    <main class="col-sm-8 col-sm-offset-2 content">
+        <div class="col-sm-4">
+            <img class="media-object"  src="./img/Logo.png" height="150px" alt="logo">
+        </div>
+        <div class="col-sm-8">
+            <h1>RecuLleida</h1>
+            <h2>Maquinària Compra venta</h2>
+        </div>
+        <br>
+        <div class="col-sm-12">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Venedor</th>
+                        <th>Model</th>
+                        <th>Preu</th>
+                        <th class="hidden-xs">Ciutat</th>
+                        <th>Documentació</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Soci 50</td>
+                        <td>Carterpilar 1520</td>
+                        <td>35.000€</td>
+                        <td class="hidden-xs">Lleida</td>
+                        <td><a target="_blank" href="./documents/C10166582.pdf">Característiques</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Venedor 210</td>
+                        <td>Maquina de cafè</td>
+                        <td>35€</td>
+                        <td class="hidden-xs">Lleida</td>
+                        <td><a target="_blank" href="./documents/C10166582.pdf">Característiques</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pepito Grillo</td>
+                        <td>Camió 3 eixos</td>
+                        <td>85.000€</td>
+                        <td class="hidden-xs">Sevilla</td>
+                        <td><a target="_blank" href="./documents/C10166582.pdf">Característiques</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="marquina.html">Soci 11</a></td>
+                        <td>Sirena años 50</td>
+                        <td>3.500€</td>
+                        <td class="hidden-xs">Lleida</td>
+                        <td><a target="_blank" href="./documents/C10166582.pdf">Característiques</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+</div>
+<!-- Peu de pàgina -->
+<footer class="container-fluid text-center navbar-fixed-bottom">
+    <p>Reculleida S.L. Avda Prat de la Riba, 34 25004, lleida</p>
+    <p>Tel 973 236849</p>
+    <p>&copy; Tots els drets reservats.</p>
+</footer>
+<script src="./js/main.js"></script>
+</body>
+</html>

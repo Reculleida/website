@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <title>RecuLleida</title>
+    <meta charset="utf-8">
+
+    <link rel="icon" href="./img/favicon.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+
+    <link rel="shortcut icon" href="./img/favicon.png"/>
+    <link rel="apple-touch-icon" href="./img/favicon.png"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Menu Superior -->
+<header class="container-fluid navbar-fixed-top">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img class="navbar-brand navbar-center" style="margin-right: 10px; padding: 0;" alt="Reculleida" src="./img/Logo.png">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="./index.html">Inici</a></li>
+                    <li><a href="./sobre.html">Sobre RecuLleida</a></li>
+                    <li role="presentation" class="dropdown"><a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Socis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./socis.html">Llistat</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li ><a href="./rvilella.html">Ramon Vilella</a></li>
+                            <li><a href="#">Desguaces Pedros</a></li>
+                            <li><a href="#">Vilella recicla</a></li>
+                            <li><a href="./marquina.html">Desguaces Marquina</a></li>
+                            <li><a href="#">Lloces recuperacions</a></li>
+                            <li><a href="#">Desguaces Abellò</a></li>
+                            <li><a href="#">Recuperacions Romeu</a></li>
+                            <li><a href="#">Shalom</a></li>
+
+                        </ul>
+                    </li>
+                    <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Serveis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Recollida Selectiva</a></li>
+                            <li><a href="">Ferralla</a></li>
+                            <li><a href="">Fracció resta</a></li>
+                            <li><a href="">Fracció Orgànica</a></li>
+                            <li><a href="">Envasos</a></li>
+                            <li><a href="">Recollida</a></li>
+                            <li><a href="">Deixalleria mobil</a></li>
+                            <li><a href="">Serveis Comercials</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="active"><a href="#">Noticies</a></li>
+                    <li><a href="./contacte.html">Contacte</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><p class="navbar-text">Ets soci ?</p></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Iniciar Sessi&oacute;</b> <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        Iniciar Sessi&oacute; amb
+                                        <div class="social-buttons">
+                                            <a href="./privat.html" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                            <a href="./privat.html" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                        </div>
+                                        o
+                                        <form class="form" method="post" action="" accept-charset="UTF-8" id="login-nav">
+                                            <div class="form-group">
+                                                <label class="sr-only" >Correu electr&ograve;nic</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Correu electr&ograve;nic" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only">Contrasenya</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contrasenya" required>
+                                                <div class="help-block text-right"><a href="">Recuperar contrasenya</a></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" onclick="location='./privat.html'" class="btn btn-primary btn-block">Acceptar</button>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Mant&eacute;n-me connectat
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="bottom text-center">
+                                        Nou ? <a href="#"><b>Uneix-te a nosaltres</b></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--  Principal, Noticies, Socis -->
+<div class="container-fluid text-left">
+    <!-- Contingut central -->
+    <main class="col-sm-8 col-sm-offset-2 content">
+        <div>
+            <img class="media-object"  src="./img/Logo.png" height="100px" alt="logo">
+            <h2>Noticies</h2>
+            <dl>
+                <dt id="noticia1" class="well">
+                    <h4><span>Titular de la notícia</span></h4>
+                    <h5> Subtítol de la notícia</h5>
+                    <h6>dd - mm - yyyy</h6>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="img/logob.jpg" height="100px" alt="Imatge noticia">
+                        </div>
+                        <div class="col-sm-10">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias enim, error excepturi illum ipsam nam veritatis voluptatem. Adipisci nihil numquam perferendis reprehenderit. Adipisci, amet corporis cupiditate deleniti ducimus exercitationem explicabo fugit harum itaque iusto laboriosam, magni maiores quisquam ratione unde! Accusamus amet aspernatur atque beatae deserunt, earum eius, error est expedita illo in incidunt ipsa ipsum labore laborum molestias nesciunt officiis omnis possimus quae sequi, tempora velit veniam veritatis voluptate! Atque cum esse explicabo facilis ipsum ratione? Aspernatur culpa dolorem ea, explicabo numquam officia possimus reiciendis repellendus rerum tenetur? A accusantium aliquid assumenda beatae corporis cumque debitis delectus dicta dolorem ea eius, esse ex explicabo harum inventore ipsam ipsum itaque laboriosam laudantium molestiae nam perferendis perspiciatis praesentium quibusdam reiciendis rem repellendus repudiandae similique sit tenetur, veritatis voluptatum.</p>
+                        </div>
+                    </div>
+                </dt>
+
+                <dt id="noticia2" class="well">
+                <h4>Web RecuLleida</h4>
+                <h5>Inaguració 2017</h5>
+                <h6>19 - 06 - 2017</h6>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img src="img/logob.jpg" alt="Imatge noticia">
+                    </div>
+                    <div class="col-sm-10">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias enim, error excepturi illum ipsam nam veritatis voluptatem. Adipisci nihil numquam perferendis reprehenderit. Adipisci, amet corporis cupiditate deleniti ducimus exercitationem explicabo fugit harum itaque iusto laboriosam, magni maiores quisquam ratione unde! Accusamus amet aspernatur atque beatae deserunt, earum eius, error est expedita illo in incidunt ipsa ipsum labore laborum molestias nesciunt officiis omnis possimus quae sequi, tempora velit veniam veritatis voluptate! Atque cum esse explicabo facilis ipsum ratione? Aspernatur culpa dolorem ea, explicabo numquam officia possimus reiciendis repellendus rerum tenetur? A accusantium aliquid assumenda beatae corporis cumque debitis delectus dicta dolorem ea eius, esse ex explicabo harum inventore ipsam ipsum itaque laboriosam laudantium molestiae nam perferendis perspiciatis praesentium quibusdam reiciendis rem repellendus repudiandae similique sit tenetur, veritatis voluptatum.</p>
+                    </div>
+                </div>
+                </dt>
+                <dt id="noticia3" class="well">
+                <h4>Reunió Mossos</h4>
+                <h5>Reculleida i els Mossos acorden una col·laboració</h5>
+                <h6>15 - 03 - 2016</h6>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img src="img/logob.jpg" alt="Imatge noticia">
+                    </div>
+                    <div class="col-sm-10">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias enim, error excepturi illum ipsam nam veritatis voluptatem. Adipisci nihil numquam perferendis reprehenderit. Adipisci, amet corporis cupiditate deleniti ducimus exercitationem explicabo fugit harum itaque iusto laboriosam, magni maiores quisquam ratione unde! Accusamus amet aspernatur atque beatae deserunt, earum eius, error est expedita illo in incidunt ipsa ipsum labore laborum molestias nesciunt officiis omnis possimus quae sequi, tempora velit veniam veritatis voluptate! Atque cum esse explicabo facilis ipsum ratione? Aspernatur culpa dolorem ea, explicabo numquam officia possimus reiciendis repellendus rerum tenetur? A accusantium aliquid assumenda beatae corporis cumque debitis delectus dicta dolorem ea eius, esse ex explicabo harum inventore ipsam ipsum itaque laboriosam laudantium molestiae nam perferendis perspiciatis praesentium quibusdam reiciendis rem repellendus repudiandae similique sit tenetur, veritatis voluptatum.</p>
+                    </div>
+                </div>
+                </dt>
+            </dl>
+        </div>
+    </main>
+</div>
+<!-- Peu de pàgina -->
+<footer class="container-fluid text-center navbar-fixed-bottom">
+    <p>Reculleida S.L. Avda Prat de la Riba, 34 25004, lleida</p>
+    <p>Tel 973 236849</p>
+    <p>&copy; Tots els drets reservats.</p>
+</footer>
+
+</body>
+</html>

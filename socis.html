@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <title>Socis RecuLleida</title>
+    <meta charset="utf-8">
+
+    <link rel="icon" href="./img/favicon.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+
+    <link rel="shortcut icon" href="./img/favicon.png"/>
+    <link rel="apple-touch-icon" href="./img/favicon.png"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+</head>
+<body>
+<!-- Menu Superior -->
+<header class="container-fluid navbar-fixed-top">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img class="navbar-brand navbar-center" style="margin-right: 10px; padding: 0;" alt="Reculleida" src="./img/Logo.png">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="./index.html">Inici</a></li>
+                    <li><a href="./sobre.html">Sobre RecuLleida</a></li>
+                    <li role="presentation" class="dropdown active"><a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Socis</a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="#">Llistat</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li ><a href="./rvilella.html">Ramon Vilella</a></li>
+                            <li><a href="">Desguaces Pedros</a></li>
+                            <li><a href="">Vilella recicla</a></li>
+                            <li><a href="">Desguaces Marquina</a></li>
+                            <li><a href="">Lloces recuperacions</a></li>
+                            <li><a href="">Desguaces Abellò</a></li>
+                            <li><a href="">Recuperacions Romeu</a></li>
+                            <li><a href="">Shalom</a></li>
+
+                        </ul>
+                    </li>
+                    <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Serveis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Recollida Selectiva</a></li>
+                            <li><a href="">Ferralla</a></li>
+                            <li><a href="">Fracció resta</a></li>
+                            <li><a href="">Fracció Orgànica</a></li>
+                            <li><a href="">Envasos</a></li>
+                            <li><a href="">Recollida</a></li>
+                            <li><a href="">Deixalleria mobil</a></li>
+                            <li><a href="">Serveis Comercials</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="./noticies.html">Noticies</a></li>
+                    <li><a href="./contacte.html">Contacte</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><p class="navbar-text">Ets soci ?</p></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Iniciar Sessi&oacute;</b> <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        Iniciar Sessi&oacute; amb
+                                        <div class="social-buttons">
+                                            <a href="./privat.html" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                            <a href="./privat.html" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                        </div>
+                                        o
+                                        <form class="form" method="post" action="" accept-charset="UTF-8" id="login-nav">
+                                            <div class="form-group">
+                                                <label class="sr-only" >Correu electr&ograve;nic</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Correu electr&ograve;nic" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only">Contrasenya</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contrasenya" required>
+                                                <div class="help-block text-right"><a href="">Recuperar contrasenya</a></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" onclick="location='./privat.html'" class="btn btn-primary btn-block">Acceptar</button>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Mant&eacute;n-me connectat
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="bottom text-center">
+                                        Nou ? <a href="#"><b>Uneix-te a nosaltres</b></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--  Principal, Noticies, Socis-->
+<div class="container-fluid text-left">
+    <!-- Contingut central -->
+    <main class=" col-xs-12 col-sm-offset-1  col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8  content  text-center">
+        <div class="row socis">
+             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="thumbnail">
+                    <img src="./img/socis/ramonVilella.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Ramon Vilella</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda, culpa deleniti, dolor eaque, ex inventore labore laborum officia porro quae recusandae tempore voluptates!. </p>
+                        <p><a href="./rvilella.html" class="btn btn-primary" role="button">Serveis</a> <a href="#" class="btn btn-default" role="button">Informació</a> <a href="http://www.ramonvilella.com/" target="_blank" class="btn btn-default" role="button">Web</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="thumbnail">
+                    <img src="./img/socis/pedros.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Dersguaces Pedros</h3>
+                        <p>Desballestaments i Ferralles Pedrós, S. A. és una empresa fundada a Lleida fa més de 60 anys.Durant tots aquests anys, hem realitzat constants millores tècniques i tecnològiques destinades a optimitzar el procés de gestió.</p>
+                        <p><a href="" class="btn btn-primary" role="button">Serveis</a> <a href="#" class="btn btn-default" role="button">Informació</a> <a href="http://www.desguacespedros.es/" target="_blank" class="btn btn-default" role="button">Web</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="thumbnail">
+                    <img src="./img/socis/jVilellaFelip.png" alt="...">
+                    <div class="caption">
+                        <h3>Vilella Recicla</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid optio pariatur quae quidem quisquam quo repellendus soluta. Ad architecto asperiores consequuntur deleniti eius et excepturi id itaque iure magni mollitia nisi nulla odio perferendis possimus quibusdam repudiandae similique, sunt, velit voluptas! Dolorem eius numquam quasi rem ut veritatis!</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Serveis</a> <a href="#" class="btn btn-default" role="button">Informació</a> <a href="http://www.vilellarecicla.com" target="_blank" class="btn btn-default" role="button">Web</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="thumbnail">
+                    <img src="./img/socis/marquina.jpg" alt="...">
+                    <div class="caption" >
+                        <h3>Desguaces Marquina</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium, cupiditate dolor ea eos et incidunt ipsa neque odio odit omnis quo rerum.</p>
+                        <p><a href="./marquina.html" class="btn btn-primary" role="button">Serveis</a> <a href="#" class="btn btn-default" role="button">Informació</a> <a href="http://chatarrasydesguacesmarquina.com/" target="_blank" class="btn btn-default" role="button">Web</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row socis">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="thumbnail">
+                    <img src="./img/socis/llosesRecuperacions.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Lloces Recuperacions</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut blanditiis dicta eligendi incidunt ipsa maiores modi non numquam quibusdam quidem, sapiente tempore velit vero voluptates. Accusantium aperiam non odio quae sint!</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Serveis</a> <a href="#" class="btn btn-default" role="button">Informació</a> <a href="http://www.llosesderecuperacions.cat/" target="_blank" class="btn btn-default" role="button">Web</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="thumbnail">
+                    <img src="./img/socis/abello.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Desguaces Abellò</h3>
+                        <p>DESGUACES ABELLO és una empresa creada l’any 2012 però, formada per gent amb una amplia expèriencia en el sector. Compromesos amb el medi ambient el nostre objectiu és seleccionar i reciclar tots els elements contaminants d’un vehicle (olis, líquids refrigerants, gas...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Serveis</a> <a href="#" class="btn btn-default" role="button">Informació</a> <a href="http://desguacesabello.com/" target="_blank" class="btn btn-default" role="button">Web</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="thumbnail">
+                    <img src="./img/socis/rRomeu.png" alt="...">
+                    <div class="caption">
+                        <h3>Recuperacions Romeu</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut deleniti dignissimos dolor doloremque excepturi exercitationem facere fugiat fugit harum iusto maxime nam nobis nostrum officiis quas quasi quis repellendus sequi, sit? Numquam, quasi sint!</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Serveis</a> <a href="#" class="btn btn-default" role="button">Informació</a> <a href="#" class="btn btn-default" role="button">Web</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="thumbnail">
+                    <img src="./img/socis/shalom.gif" alt="...">
+                    <div class="caption">
+                        <h3>Shalom</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur atque cupiditate, doloribus eius fugit minima.!</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Serveis</a> <a href="#" class="btn btn-default" role="button">Informació</a> <a href="http://www.shalomtaller.net/" target="_blank" class="btn btn-default" role="button">Web</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- Peu de pàgina -->
+<footer class="container-fluid text-center navbar-fixed-bottom">
+    <p>Reculleida S.L. Avda Prat de la Riba, 34 25004, lleida</p>
+    <p>Tel 973 236849</p>
+    <p>&copy; Tots els drets reservats.</p>
+</footer>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+</body>
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+</html>
