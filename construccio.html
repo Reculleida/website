@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <title>En construcci&#242;</title>
+    <meta charset="utf-8">
+
+    <link rel="icon" href="./img/favicon.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+
+    <link rel="shortcut icon" href="./img/favicon.png"/>
+    <link rel="apple-touch-icon" href="./img/favicon.png"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!-- Menu Superior -->
+<header class="container-fluid navbar-fixed-top">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img class="navbar-brand navbar-center" style="margin-right: 10px; padding: 0;" alt="Reculleida" src="./img/Logo.png">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="./index.html">Inici</a></li>
+                    <li><a href="./sobre.html">Sobre RecuLleida</a></li>
+                    <!--
+                    <li role="presentation" class="dropdown"><a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Socis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./socis.html">Llistat</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li ><a href="./rvilella.html">Ramon Vilella</a></li>
+                            <li><a href="">Desguaces Pedros</a></li>
+                            <li><a href="">Vilella recicla</a></li>
+                            <li><a href="">Desguaces Marquina</a></li>
+                            <li><a href="">Lloces recuperacions</a></li>
+                            <li><a href="">Desguaces Abellò</a></li>
+                            <li><a href="">Recuperacions Romeu</a></li>
+                            <li><a href="">Shalom</a></li>
+
+                        </ul>
+                    </li> -->
+                    <li role="presentation" class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Serveis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./construccio.html">Recollida Selectiva</a></li>
+                            <li><a href="./construccio.html">Ferralla</a></li>
+                            <li><a href="./construccio.html">Fracció resta</a></li>
+                            <li><a href="./construccio.html">Fracció Orgànica</a></li>
+                            <li><a href="./construccio.html">Envasos</a></li>
+                            <li><a href="./construccio.html">Recollida</a></li>
+                            <li><a href="./construccio.html">Deixalleria mobil</a></li>
+                            <li><a href="./construccio.html">Serveis Comercials</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./noticies.html">Noticies</a></li>
+                    <li><a href="./contacte.html">Contacte</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><p class="navbar-text">Ets soci ?</p></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Iniciar Sessi&oacute;</b> <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!--Iniciar Sessi&oacute; amb
+                                        <div class="social-buttons">
+                                            <a href="./privat.html" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                            <a href="./privat.html" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                        </div>
+                                        o-->
+                                        <form class="form" method="post" action="" accept-charset="UTF-8" id="login-nav">
+                                            <div class="form-group">
+                                                <label class="sr-only" >Correu electr&ograve;nic</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Correu electr&ograve;nic" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only">Contrasenya</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contrasenya" required>
+                                                <div class="help-block text-right"><a href="">Recuperar contrasenya</a></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" onclick="location='./privat.html'" class="btn btn-primary btn-block">Acceptar</button>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Mant&eacute;n-me connectat
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="bottom text-center">
+                                        Nou ? <a href="./contacte.html"><b>Uneix-te a nosaltres</b></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--  Principal, Noticies, Socis -->
+<div class="container-fluid text-left">
+    <!-- Contingut central -->
+    <main class="col-sm-8 col-sm-offset-2 content">
+        <div>
+            <img class="media-object"  src="./img/Logo.png" height="100px" alt="logo">
+            <h2>En construcci&#243;</h2>
+            <p>En aquest moment estem en proc&#233;s de construcci&#243;</p>
+            <blockquote>
+                Si voleu estar al dia de les novetats podeu visitar la nostra secci&#243; de <a href="./noticies.html">notic&#237;es</a> o ens podeu seguir al
+                <a href="https://twitter.com/recuLleida">Twitter</a>
+            </blockquote>
+        </div>
+    </main>
+</div>
+
+<!-- Peu de pàgina -->
+<footer class="container-fluid text-center navbar-fixed-bottom">
+    <p>Reculleida S.L. Avda Prat de la Riba, 34 25004, lleida</p>
+    <p>Tel 973 236849</p>
+    <p>&copy; Tots els drets reservats.</p>
+</footer>
+
+</body>
+</html>
