@@ -1,0 +1,203 @@
+@media print {
+    .container {
+        width: auto;
+    }
+}
+
+  body{
+
+     padding-top: 70px;
+     padding-bottom: 85px;
+     background-color: white;
+  }
+  dt {
+      display: block;
+      background-color: #EF4049;
+  }
+  main{
+      font-size: 100%;
+  }
+
+  h3{
+      text-align: center;
+  }
+  iframe {
+      max-width: 100%;
+      height: auto;
+  }
+
+/*Menu Superior */
+  nav.navbar.navbar-default{
+    background-color: #B98F00;
+  }
+  .navbar-default .navbar-nav>li>a {
+      color:#F3CA41;
+  }
+  .navbar-default .navbar-nav>li>a:hover {
+      background-color:#F3CA41 ;
+      color:#B98F00;
+  }
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+      background-color:#F3CA41 ;
+      color:#B98F00;
+  }
+  .navbar-default .navbar-text{
+      color:#F3CA41;
+  }
+
+
+/* Noticies */
+.noticia{
+    background-color: #EF4049;
+    color:#940007;
+    padding: 5px;
+}
+
+.noticia > h4{
+    color:#690005;
+    border-bottom-color: #B60009;
+    border-bottom-style: double;
+}
+  .noticia > h5{
+      font-size: 85%;
+  }
+.noticia > h6{
+font-size: 75%;
+}
+
+
+
+
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    /*.row.content {height: 450px}*/
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+
+
+
+
+
+
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+      /*Login*/
+      #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+
+    }
+
+    /* Login */
+#login-dp{
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow:hidden;
+  background-color:rgba(255,255,255,.8);
+}
+
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+
+/* Noticies */
+.col-sm-2>h3{
+  text-align: center;
+}
+.col-sm-2>p {
+  margin-left: 10px;
+}
+.par{
+  background-color: #ededed;
+  color:#337ab7;
+}
+article:hover{
+  cursor:pointer;
+  background-color: white;
+}
+.right div:hover{
+  cursor:pointer;
+  background-color: #498800;
+    color: #92DD3B;
+}
+  .right div{
+      background-color:#92DD3B;
+      color:#346100;
+  }
+  aside{
+      background-color: white;
+      padding-bottom: 10px;
+  }
+  div.well.navbar{
+      background-color: white;
+  }
+/* Peu de pàgina */
+
+  footer {
+
+      background-color: #B98F00;
+      color:#F3CA41;
+      padding: 0px;
+
+  }
+
+
+  <!-- Socis -->
+
+  .thumbnail .caption{
+    color:yellow;
+
+}

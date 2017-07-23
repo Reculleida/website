@@ -4,8 +4,9 @@
  * Date: 23/7/2017
  * Time: 18:27
  */
-
+echo "PHP inici";
 if (isset($_POST['submit'])) {
+    echo "Dins IF";
     // El usuario existe, por lo que mandamos el mail
     $email_from = 'reculleida@eucatra.net';
     $email_to = $_POST['email'];
@@ -36,5 +37,12 @@ if (isset($_POST['submit'])) {
         'X-Mailer: PHP/' . phpversion();
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-    mail($email_to, $email_subject, $email_message, $headers);
+    $bool= mail($email_to, $email_subject, $email_message, $headers);
+    if($bool){
+        echo "Missatge enviat";
+    }else{
+        echo "Missatge no enviat";
+    }
 }
+echo "Final";
+?>
