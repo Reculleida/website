@@ -133,7 +133,7 @@
 
             <img class="media-object"  src="./img/Logo.png" height="100px" alt="logo">
             <h2>Formulari de Contacte</h2>
-                <form class="" method="post" action="sendMail.php">
+                <form class="" method="post" action="./sendMail.php">
 
                     <div class="form-group">
                         <label for="name" class="cols-sm-2 control-label">Nom i Cognoms</label>
@@ -160,7 +160,7 @@
                         <div class="cols-sm-10">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                <input type="password" class="form-control" name="email" id="email"  placeholder="Correu electrònic"/>
+                                <input type="text" class="form-control" name="email" id="email"  placeholder="Correu electrònic"/>
                             </div>
                         </div>
                     </div>
@@ -191,9 +191,10 @@
 
 
                     <div class="form-group ">
-                        <a href="" target="_self" type="button" id="button" class="btn btn-primary  btn-block ">Enviar</a>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Reset">
+                        <!--<a href="./sendMail.php" target="_self" type="button" id="button" class="btn btn-primary  btn-block ">Enviar</a>-->
                     </div>
-
                 </form>
             </div>
 
