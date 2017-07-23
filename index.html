@@ -16,8 +16,18 @@
     <link rel="icon" href="./img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
     <link rel="shortcut icon" href="./img/favicon.png"/>
     <link rel="apple-touch-icon" href="./img/favicon.png"/>
-
-
+    <script type="text/javascript">
+        function downloadJSAtOnload() {
+            var element = document.createElement("script");
+            element.src = "./js/main.js";
+            document.body.appendChild(element);
+        }
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+    </script>
 </head>
 
 <body>
@@ -49,14 +59,14 @@
                 </li> -->
         		<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Serveis</a>
                     <ul class="dropdown-menu">
-                        <li><a href="">Recollida Selectiva</a></li>
-                        <li><a href="">Ferralla</a></li>
-                        <li><a href="">Fracció resta</a></li>
-                        <li><a href="">Fracció Orgànica</a></li>
-                        <li><a href="">Envasos</a></li>
-                        <li><a href="">Recollida</a></li>
-                        <li><a href="">Deixalleria mobil</a></li>
-                        <li><a href="">Serveis Comercials</a></li>
+                        <li><a href="./construccio.html">Recollida Selectiva</a></li>
+                        <li><a href="./construccio.html">Ferralla</a></li>
+                        <li><a href="./construccio.html">Fracció resta</a></li>
+                        <li><a href="./construccio.html">Fracció Orgànica</a></li>
+                        <li><a href="./construccio.html">Envasos</a></li>
+                        <li><a href="./construccio.html">Recollida</a></li>
+                        <li><a href="./construccio.html">Deixalleria mobil</a></li>
+                        <li><a href="./construccio.html">Serveis Comercials</a></li>
                     </ul>
                 </li>
         		<li><a href="./noticies.html">Noticies</a></li>
@@ -150,13 +160,16 @@
 
 <!-- Peu de pàgina -->
 <footer class="container-fluid text-center navbar-fixed-bottom">
-  <p>Reculleida</p>
-  <p>&copy; Tots els drets reservats.</p>
+    <p>Reculleida</p>
+    <p>&copy; Tots els drets reservats.</p>
 </footer>
+
+</body>
+
+<!-- Scripts and CSS -->
 <script src="./js/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
-<script src="./js/main.js"></script>
 <link rel="stylesheet" href="./css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
-</body>
+
 </html>

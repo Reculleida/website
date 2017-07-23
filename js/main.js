@@ -1,7 +1,8 @@
 /**
  * Created by iva on 17/6/2017.
  */
-if(document.title == "RecuLleida inici") {
+console.log(document.title);
+if(document.title == "RecuLleida") {
     var noticia;
     noticia = document.getElementById("noticia1");
     noticia.addEventListener("click", function () {

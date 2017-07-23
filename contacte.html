@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="ca">
+<!--Head-->
 <head>
-    <title>Contacte</title>
+    <title>RecuLleida Contacte</title>
+    <meta name="description" content="Contacte Reculleida, Asociaci&#243; d&#39;empreses de reciclatge de Lleida">
+    <meta name="keywords" content="Contacte, reciclatge, Lleida, Twitter, @RecuLleida, RecuLleida">
+    <meta name="copyright" content="Associaci&#243; RecuLleida">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="Index,Follow">
 
+    <meta name="Author" content="Iv&#224;">
+    <META NAME="REPLY-TO" CONTENT="iva@eucatra.net">
     <link rel="icon" href="./img/favicon.png" sizes="16x16" type="image/png">
     <link rel="icon" href="./img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
-
     <link rel="shortcut icon" href="./img/favicon.png"/>
     <link rel="apple-touch-icon" href="./img/favicon.png"/>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function downloadJSAtOnload() {
+            var element = document.createElement("script");
+            element.src = "./js/main.js";
+            document.body.appendChild(element);
+        }
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+    </script>
 </head>
+
 <body>
 <!-- Menu Superior -->
 <header class="container-fluid navbar-fixed-top">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <img class="navbar-brand navbar-center" style="margin-right: 10px; padding: 0;" alt="Reculleida" src="./img/Logo.png">
+                <img class="navbar-brand navbar-center" style="margin-right: 10px; padding: 0;" alt="Reculleida" src="./img/Logop.png">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -33,32 +47,26 @@
                 <ul class="nav navbar-nav navbar-left">
                     <li><a href="./index.html">Inici</a></li>
                     <li><a href="./sobre.html">Sobre RecuLleida</a></li>
+                    <!-- Menu Socis -->
+                    <!--
                     <li role="presentation" class="dropdown"><a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Socis</a>
                         <ul class="dropdown-menu">
                             <li><a href="./socis.html">Llistat</a></li>
                             <li role="separator" class="divider"></li>
-                            <li ><a href="./rvilella.html">Ramon Vilella</a></li>
-                            <li><a href="#">Desguaces Pedros</a></li>
-                            <li><a href="#">Vilella recicla</a></li>
-                            <li><a href="./marquina.html">Desguaces Marquina</a></li>
-                            <li><a href="#">Lloces recuperacions</a></li>
-                            <li><a href="#">Desguaces Abellò</a></li>
-                            <li><a href="#">Recuperacions Romeu</a></li>
-                            <li><a href="#">Shalom</a></li>
-
+                            <li><a href="./soci1">soci1</a></li>
+                            <li><a href="">Desguaces Pedros</a></li>
                         </ul>
-                    </li>
-                    <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" href="#">Serveis</a>
+                    </li> -->
+                    <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Serveis</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Recollida Selectiva</a></li>
-                            <li><a href="#">Ferralla</a></li>
-                            <li><a href="#">Fracció resta</a></li>
-                            <li><a href="#">Fracció Orgànica</a></li>
-                            <li><a href="#">Envasos</a></li>
-                            <li><a href="#">Recollida</a></li>
-                            <li><a href="#">Deixalleria mobil</a></li>
-                            <li><a href="#">Serveis Comercials</a></li>
-
+                            <li><a href="./construccio.html">Recollida Selectiva</a></li>
+                            <li><a href="./construccio.html">Ferralla</a></li>
+                            <li><a href="./construccio.html">Fracció resta</a></li>
+                            <li><a href="./construccio.html">Fracció Orgànica</a></li>
+                            <li><a href="./construccio.html">Envasos</a></li>
+                            <li><a href="./construccio.html">Recollida</a></li>
+                            <li><a href="./construccio.html">Deixalleria mobil</a></li>
+                            <li><a href="./construccio.html">Serveis Comercials</a></li>
                         </ul>
                     </li>
                     <li><a href="./noticies.html">Noticies</a></li>
@@ -72,24 +80,18 @@
                             <li>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        Iniciar Sessi&oacute; amb
-                                        <div class="social-buttons">
-                                            <a href="./privat.html" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                                            <a href="./privat.html" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-                                        </div>
-                                        o
-                                        <form class="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                        <form class="form" method="post" action="#" accept-charset="UTF-8" id="login-nav">
                                             <div class="form-group">
                                                 <label class="sr-only" >Correu electr&ograve;nic</label>
-                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Correu electr&ograve;nic" required>
+                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Correu electr&ograve;nic o Usuari" required>
                                             </div>
                                             <div class="form-group">
                                                 <label class="sr-only">Contrasenya</label>
                                                 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contrasenya" required>
-                                                <div class="help-block text-right"><a href="">Recuperar contrasenya</a></div>
+                                                <div class="help-block text-right"><a href="./contacte.html">Recuperar contrasenya</a></div>
                                             </div>
                                             <div class="form-group">
-                                                <button type="submit" onclick="location='./privat.html'" class="btn btn-primary btn-block">Acceptar</button>
+                                                <button type="submit" onclick="location=''" class="btn btn-primary btn-block">Acceptar</button>
                                             </div>
                                             <div class="checkbox">
                                                 <label>
@@ -99,7 +101,7 @@
                                         </form>
                                     </div>
                                     <div class="bottom text-center">
-                                        Nou ? <a href="#"><b>Uneix-te a nosaltres</b></a>
+                                        Nou ? <a href="./contacte.html"><b>Uneix-te a nosaltres</b></a>
                                     </div>
                                 </div>
                             </li>
@@ -110,6 +112,7 @@
         </div>
     </nav>
 </header>
+
 <!--  Principal, Noticies, Socis -->
 <div class="container-fluid text-left">
 
@@ -121,9 +124,9 @@
                     <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.6595998636485!2d0.6196214158698546!3d41.61987207924355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a6e0402253972f%3A0x29868d48119e2ee3!2sAv.+Prat+de+la+Riba%2C+34%2C+25004+Lleida!5e0!3m2!1sca!2ses!4v1497639410496"  frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <br>
-                <p>Reculleida S.L. Avda Prat de la Riba, 34 25004, lleida</p>
-                <p>Correu electrònic: <a href="mailto:'info@reculleida.org">info@reculleida.org</a></p>
-                <p>Telèfon: <a href="tel:'+34973236849">973 23 68 49</a></p>
+                <p>Reculleida Avda Prat de la Riba, 34 25004, lleida</p>
+                <p>Correu electr&#242;nic: <a href="mailto:'info@reculleida.org">info@reculleida.org</a></p>
+                <p>Tel&#232;fon: <a href="tel:'+34973236849">973 23 68 49</a></p>
 
             </div>
             <div class="col-sm-8">
@@ -143,7 +146,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="username" class="cols-sm-2 control-label">Telèfon</label>
+                        <label for="username" class="cols-sm-2 control-label">Tel&#232;fon</label>
                         <div class="cols-sm-10">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
@@ -153,7 +156,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="password" class="cols-sm-2 control-label">Correu Electrònic</label>
+                        <label for="password" class="cols-sm-2 control-label">Correu Electr&#242;nic</label>
                         <div class="cols-sm-10">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
@@ -163,15 +166,15 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="confirm" class="cols-sm-2 control-label">Departament</label>
+                        <label for="name" class="cols-sm-2 control-label">Departament</label>
                         <div class="cols-sm-10">
 
                                 <select class="form-control">
-                                    <option>Administració</option>
+                                    <option>Administraci&#243;</option>
                                     <option>Contabilitat</option>
                                     <option>Treball</option>
-                                    <option>Maquinària</option>
-                                    <option>Contractació</option>
+                                    <option>Maquin&#224;ria</option>
+                                    <option>Contractaci&#243;</option>
                                     <option>Alta Soci</option>
                                 </select>
 
@@ -202,10 +205,16 @@
 </div>
 <!-- Peu de pàgina -->
 <footer class="container-fluid text-center navbar-fixed-bottom">
-    <p>Reculleida S.L. Avda Prat de la Riba, 34 25004, lleida</p>
-    <p>Tel 973 236849</p>
+    <p>Reculleida</p>
     <p>&copy; Tots els drets reservats.</p>
 </footer>
 
 </body>
+
+<!-- Scripts and CSS -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+
 </html>
