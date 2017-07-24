@@ -4,7 +4,7 @@
  * Date: 23/7/2017
  * Time: 18:27
  */
-$resultat = "<h4> El missatge no s'ha enviat correctament, podeu revisar les dades i tornar-ho a provar mes tard, si l'error persisteix ens podeu contactar per telèfon, gràcies</h4>";
+$resultat = "<h4> El missatge no s'ha enviat correctament, podeu revisar les dades i tornar-ho a provar més tard, si l'error persisteix, ens podeu contactar per telèfon, gràcies.</h4>";
 if (isset($_POST['submit'])) {
 
     $email_from = 'reculleida@eucatra.net';
@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
     $bool= mail($email_to, $email_subject, $email_message, $headers);
     if($bool){
         //echo " <br>Missatge enviat";
-        $resultat = "<h4> Missatge enviat correctament, ens posarem en contacte haviat, fins ara</h4>";
+        $resultat = "<h4>Missatge enviat correctament, ens posarem en contacte aviat, fins ara.</h4>";
     }
 }
 echo $resultat;
