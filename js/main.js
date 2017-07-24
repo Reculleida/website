@@ -20,7 +20,12 @@ if(document.title == "RecuLleida") {
 
 
 
-
+function resposta(){
+    var element;
+    element = document.createElement("p");
+    element.appendChild(document.createTextNode("Missatge enviat, gràcies per la seva comunicació"));
+    document.body.appendChild(element);
+}
 
 
 

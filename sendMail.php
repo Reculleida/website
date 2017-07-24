@@ -4,10 +4,8 @@
  * Date: 23/7/2017
  * Time: 18:27
  */
-echo " <br>PHP inici";
 if (isset($_POST['submit'])) {
-    echo "Dins IF";
-    // El usuario existe, por lo que mandamos el mail
+
     $email_from = 'reculleida@eucatra.net';
     //$email_to = $_POST['email'];
     $email_to = 'reculleida@eucatra.net';
@@ -18,7 +16,7 @@ if (isset($_POST['submit'])) {
 							</head> 
 							<body> 
 							<h1>Reculleida Web</h1>
-							<p><h2>Sol.licitud d'informació del usuari:</h2><br>
+							<p><h2>Sol.licitud d'informació del usuari:</h2>
 							
 							<br><b>Nom:&nbsp;&nbsp;</b>" . $_POST['name'] . "
 							<br><b>Mail:</b>&nbsp;&nbsp;" . $_POST['email'] . "
@@ -40,11 +38,10 @@ if (isset($_POST['submit'])) {
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     $bool= mail($email_to, $email_subject, $email_message, $headers);
-    if($bool){
+   /* if($bool){
         echo " <br>Missatge enviat";
     }else{
         echo " <br>Missatge no enviat";
-    }
+    }*/
 }
-echo " <br>Final";
 ?>
