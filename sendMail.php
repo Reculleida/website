@@ -5,8 +5,8 @@
  * Time: 18:27
  */
 $resultat = "<h4> El missatge no s'ha enviat correctament, podeu revisar les dades i tornar-ho a provar més tard, si l'error persisteix, ens podeu contactar per telèfon, gràcies.</h4>";
-if (isset($_POST['submit'])) {
-
+/**if (isset($_POST['submit'])) {
+**/
     $email_from = 'reculleida@eucatra.net';
     //$email_to = $_POST['email'];
     $email_to = 'reculleida@eucatra.net';
@@ -43,6 +43,6 @@ if (isset($_POST['submit'])) {
         //echo " <br>Missatge enviat";
         $resultat = "<h4>Missatge enviat correctament, ens posarem en contacte aviat, fins ara.</h4>";
     }
-}
+/**}**/
 echo $resultat;
 ?>
