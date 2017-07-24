@@ -20,11 +20,22 @@ if(document.title == "RecuLleida") {
 
 
 
-function resposta(){
-    var element;
-    element = document.createElement("p");
-    element.appendChild(document.createTextNode("Missatge enviat, gràcies per la seva comunicació"));
-    document.body.appendChild(element);
+if(document.title == "RecuLleida Contacte"){
+    $(document).ready( function() {
+        $("#formulari").submit(function(){
+            var url = "./sendEmail.php";
+            $.ajax({
+                type:"POST",
+                url:url,
+                data: $("#formulari").serialize(),
+                success: function(data)
+                {
+                    $("#resultat").html(data);
+                }
+            });
+            return false;
+        });
+    });
 }
 
 
