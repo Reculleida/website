@@ -4,12 +4,13 @@
  * Date: 23/7/2017
  * Time: 18:27
  */
-echo "PHP inici";
+echo " <br>PHP inici";
 if (isset($_POST['submit'])) {
     echo "Dins IF";
     // El usuario existe, por lo que mandamos el mail
     $email_from = 'reculleida@eucatra.net';
-    $email_to = $_POST['email'];
+    //$email_to = $_POST['email'];
+    $email_to = 'reculleida@eucatra.net';
     $email_subject = 'Contacte web';
     $email_message = "<html> 
 							<head> 
@@ -21,7 +22,8 @@ if (isset($_POST['submit'])) {
 							
 							<br><b>Nom:&nbsp;&nbsp;</b>" . $_POST['name'] . "
 							<br><b>Mail:</b>&nbsp;&nbsp;" . $_POST['email'] . "
-							<br><b>Telèfon1:</b>&nbsp;&nbsp;" . $_POST['tel'] . "
+							<br><b>Telèfon:</b>&nbsp;&nbsp;" . $_POST['tel'] . "
+							<br><b>Departament</b>&nbsp;&nbsp;" . $_POST['department'] . "
 							<br><b>Missatge:</b>&nbsp;&nbsp;" . $_POST['message'] . "
 							<p><hr/>
 							<br>No respongueu aquest missatge. Ha estat emès per un servei automàtic que no permet rebre respostes.
@@ -39,10 +41,10 @@ if (isset($_POST['submit'])) {
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     $bool= mail($email_to, $email_subject, $email_message, $headers);
     if($bool){
-        echo "Missatge enviat";
+        echo " <br>Missatge enviat";
     }else{
-        echo "Missatge no enviat";
+        echo " <br>Missatge no enviat";
     }
 }
-echo "Final";
+echo " <br>Final";
 ?>
