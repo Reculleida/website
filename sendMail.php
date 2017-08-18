@@ -29,8 +29,6 @@ $resultat = "<h4> El missatge no s'ha enviat correctament, podeu revisar les dad
 							
 							</body> 
 							</html> ";
-
-
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     $headers = 'From: ' . $email_from . "\r\n" .
@@ -45,4 +43,5 @@ $resultat = "<h4> El missatge no s'ha enviat correctament, podeu revisar les dad
     }
 /**}**/
 echo $resultat;
+
 ?>
