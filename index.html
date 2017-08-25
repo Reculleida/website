@@ -13,9 +13,9 @@
     <meta charset="utf-8"/>
     <meta http-equiv="Language" content="catalan"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-
     <meta name="robots" content="Index,Follow"/>
     <meta name='url' content='http://www.reculleida.org'>
+    <meta name="theme-color" content="#B98F00"/>
     <meta name="Author" content="Iv&#224; Domingo, iva@eucatra.net">
     <meta name='designer' content='Iv&#224; Domingo, iva@iva.cat'>
     <!-- Meta Tags: Open Graph protocol -->
@@ -44,16 +44,18 @@
             window.attachEvent("onload", downloadJSAtOnload);
         else window.onload = downloadJSAtOnload;
     </script>
+    <!--link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"-->
+    <link rel="stylesheet" type="text/css" href="./css/theme.min.css">
+
 </head>
 
-<body style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.42857143; color: #333; background-color: #fff;">
+<body style="padding-top:70px;padding-bottom:85px;background-color:white;">
 <!-- Deferred Styles -->
 <noscript id="deferred-styles">
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css" mdeia="screen">
-    <link rel="stylesheet" href="./css/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="./css/style.css" mdeia="screen">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </noscript>
 <!-- Charge Styles -->
+
 <script>
     var loadDeferredStyles = function() {
         var addStylesNode = document.getElementById("deferred-styles");
@@ -69,120 +71,123 @@
 </script>
 
 <!-- Menu Superior -->
-<header class="container-fluid navbar-fixed-top" style= "position: fixed; right: 0; left: 0; z-index: 1030; border-radius: 0; top: 0; border-width: 0 0 1px; padding-right: 15px; padding-left: 15px; margin-right: auto;  margin-left: auto;">
-<nav class="navbar navbar-default" style=" position: relative; min-height: 50px; margin-bottom: 20px; border: 1px solid transparent;  background-color: #f8f8f8;  border-color: #e7e7e7; ">
-	<div class="container-fluid" style="padding-right: 15px; padding-left: 15px; margin-right: auto;  margin-left: auto;">
-    	<div class="navbar-header">
-    		<img class="navbar-brand" style="float: left;  height: 50px;  padding: 15px 15px;  font-size: 18px;  line-height: 20px; margin-right: 10px; padding: 0;" alt="Reculleida" src="./img/Logop.png">
-      		<button type="button" class="navbar-toggle" style="position: relative;  float: right;  padding: 9px 10px;  margin-top: 8px;  margin-right: 15px;  margin-bottom: 8px;  background-color: transparent; background-image: none;  border: 1px solid transparent;  border-radius: 4px;" data-toggle="collapse" data-target="#myNavbar">
-        		<span class="icon-bar" style="display: block;  width: 22px;  height: 2px;  border-radius: 1px;" ></span>
-        		<span class="icon-bar" style="display: block;  width: 22px;  height: 2px;  border-radius: 1px;" ></span>
-        		<span class="icon-bar" style="display: block;  width: 22px;  height: 2px;  border-radius: 1px;" ></span>
-      		</button>
-    	</div>
-    	<div class="collapse navbar-collapse" id="myNavbar">
-    		<ul class="nav navbar-nav navbar-left" >
-        		<li class="active" style="position: relative;  display: block;" ><a href="#">Inici</a></li>
-        		<li style="position: relative;  display: block;" ><a href="./sobre.html">Sobre RecuLleida</a></li>
-                <!-- Menu Socis -->
-                <!--
-                <li role="presentation" class="dropdown"><a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Socis</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="./socis.html">Llistat</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="./soci1">soci1</a></li>
-                        <li><a href="">Desguaces Pedros</a></li>
-                    </ul>
-                </li> -->
-        		<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Serveis</a>
-                    <ul class="dropdown-menu" style=" position: absolute;  top: 100%;  left: 0;  z-index: 1000;  display: none;  float: left;  min-width: 160px;  padding: 5px 0;  margin: 2px 0 0;  font-size: 14px;  text-align: left;  list-style: none;  background-color: #fff;  border: 1px solid #ccc;  border: 1px solid rgba(0, 0, 0, .15);  border-radius: 4px;" >
-                        <li><a href="./construccio.html">Recollida Selectiva</a></li>
-                        <li><a href="./construccio.html">Ferralla</a></li>
-                        <li><a href="./construccio.html">Fracció resta</a></li>
-                        <li><a href="./construccio.html">Fracció Orgànica</a></li>
-                        <li><a href="./construccio.html">Envasos</a></li>
-                        <li><a href="./construccio.html">Recollida</a></li>
-                        <li><a href="./construccio.html">Deixalleria mobil</a></li>
-                        <li><a href="./construccio.html">Serveis Comercials</a></li>
-                    </ul>
-                </li>
-        		<li style="position: relative;  display: block;" ><a href="./noticies.html">Noticies</a></li>
-        		<li style="position: relative;  display: block;" ><a href="./contacte.html">Contacte</a></li>
-      		</ul>
-    		<ul class="nav navbar-nav navbar-right">
-        		<li><p class="navbar-text">Ets soci ?</p></li>
-        		<li class="dropdown">
-          			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Iniciar Sessi&oacute;</b> <span class="caret"></span></a>
-					<ul id="login-dp" class="dropdown-menu">
-						<li>
-					 		<div class="row">
-								<div class="col-md-12">
-								 	<form class="form" method="post" action="#" accept-charset="UTF-8" id="login-nav">
-										<div class="form-group">
-											 <label class="sr-only" >Correu electr&ograve;nic</label>
-											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Correu electr&ograve;nic o Usuari" required>
-										</div>
-										<div class="form-group">
-											 <label class="sr-only">Contrasenya</label>
-											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contrasenya" required>
-                                             <div class="help-block text-right"><a href="./contacte.html">Recuperar contrasenya</a></div>
-										</div>
-										<div class="form-group">
-											 <button type="submit" onclick="location=''" class="btn btn-primary btn-block">Acceptar</button>
-										</div>
-										<div class="checkbox">
-											 <label>
-											 <input type="checkbox"> Mant&eacute;n-me connectat
-											 </label>
-										</div>
-								 	</form>
-								</div>
-								<div class="bottom text-center">
-									Nou ? <a href="./contacte.html"><b>Uneix-te a nosaltres</b></a>
-								</div>
-					 		</div>
-						</li>
-					</ul>
-        		</li>
-      		</ul>
-    	</div>
-  	</div>
-</nav>
+<header class="navbar-fixed-top">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img class="navbar-brand navbar-center" style="margin-right: 10px; padding: 0;" alt="Reculleida" src="./img/Logop.png">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <!--Menu Principal -->
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="./index.html">Inici</a></li>
+                    <li><a href="./sobre.html">Sobre RecuLleida</a></li>
+                    <!-- Menu Socis -->
+                    <!--
+                    <li role="presentation" class="dropdown"><a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Socis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./socis.html">Llistat</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="./soci1">soci1</a></li>
+                            <li><a href="">Desguaces Pedros</a></li>
+                        </ul>
+                    </li> -->
+                    <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Serveis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./construccio.html">Recollida Selectiva</a></li>
+                            <li><a href="./construccio.html">Ferralla</a></li>
+                            <li><a href="./construccio.html">Fracció resta</a></li>
+                            <li><a href="./construccio.html">Fracció Orgànica</a></li>
+                            <li><a href="./construccio.html">Envasos</a></li>
+                            <li><a href="./construccio.html">Recollida</a></li>
+                            <li><a href="./construccio.html">Deixalleria mobil</a></li>
+                            <li><a href="./construccio.html">Serveis Comercials</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./noticies.html">Noticies</a></li>
+                    <li><a href="./contacte.html ">Contacte</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><p class="navbar-text">Ets soci ?</p></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Iniciar Sessi&oacute;</b> <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form class="form" method="post" action="#" accept-charset="UTF-8" id="login-nav">
+                                            <div class="form-group">
+                                                <label class="sr-only" >Correu electr&ograve;nic</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Correu electr&ograve;nic o Usuari" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only">Contrasenya</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contrasenya" required>
+                                                <div class="help-block text-right"><a href="./contacte.html">Recuperar contrasenya</a></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" onclick="location=''" class="btn btn-primary btn-block">Acceptar</button>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Mant&eacute;n-me connectat
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="bottom text-center">
+                                        Nou ? <a href="./contacte.html"><b>Uneix-te a nosaltres</b></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
 
 <!--  Principal, Noticies, Socis -->
-<div class="container-fluid text-left">
+<div class="container-fluid">
         <!-- Left aside -->
-        <aside class="col-sm-3 left">
+        <aside class="col-sm-3 left" style="padding-bottom:10px;">
+
             <!-- Noticies -->
-            <div class="well navbar">
-                <p><h3>Noticies</h3>
-                <article id="noticia3" class="noticia well">
-                    <h4>Web RecuLleida</h4>
+            <div class="hidden-print">
+                <h3 style="text-align:center;">Noticies</h3>
+                <article id="noticia3" class="noticia" style="padding:10px;cursor:pointer;">
+                    <h4 style="color:#690005;border-bottom-color:#B60009;border-bottom-style:double">Web RecuLleida</h4>
                     <h5>Inaguració Web Reculleida Juliol 2017</h5>
                     <h6>19 - 07 - 2017</h6>
                 </article>
-                <article id="noticia2" class="noticia well">
-                    <h4><span>RecuLleida Comunicació</span></h4>
+                <article id="noticia2" class="noticia" style="padding:10px;cursor:pointer;">
+                    <h4 style="color:#690005;border-bottom-color:#B60009;border-bottom-style:double"><span>RecuLleida Comunicació</span></h4>
                     <h5> info@reculleida.org</h5>
                     <h6>07 - 07 - 2017</h6>
                 </article>
-                <article id="noticia1" class="noticia well">
-                    <h4>Reculleida estrena Twitter</h4>
+                <article id="noticia1" class="noticia" style="padding:10px;cursor:pointer;">
+                    <h4 style="color:#690005;border-bottom-color:#B60009;border-bottom-style:double">Reculleida estrena Twitter</h4>
                     <h5>Uusari de twitter @RecuLleida </h5>
                     <h6>19 - 06 - 2017</h6>
                 </article>
             </div>
+
             <!-- Twitter @RecuLleida -->
-            <div>
+            <div class="hidden-print">
                 <a class="twitter-timeline" data-height="320" data-dnt="true" data-theme="light" data-link-color="#B98F00" href="https://twitter.com/recuLleida">Tweets by Reculleida</a> <script async src="./js/widgets.js" charset="utf-8"></script>
             </div>
-    </aside>
+        </aside>
 
-<!-- Contingut central -->
-    <main class="col-sm-9 content">
+        <!-- Contingut central -->
+        <main class="col-sm-9 content">
         <div class="row">
-            <div class="col-sm-10 col-sm-offset-1 col-xs-12 thumbnail" style="border:none">
+            <div class="col-sm-10 col-sm-offset-1 col-xs-12 thumbnail" style="border: none; background-color: transparent">
                 <img src="./img/lleida.jpg" alt="Lleida vista aerea">
                 <h1>Benvinguts</h1>
                 <p>Reculleida és una associació, sense anim de lucre, que agrupa a les empreses de Lleida que es dediquen a recuperar i reciclar.</p>
@@ -192,7 +197,7 @@
                 </blockquote>
             </div>
         </div>
-    </main>
+        </main>
 </div>
 
 <!-- Peu de pàgina -->
@@ -203,9 +208,9 @@
 
 </body>
 
-<!-- Scripts and CSS -->
-<script src="./js/jquery.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
 
 
 </html>
+<!-- Scripts -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>

@@ -3,19 +3,35 @@
 <!--Head-->
 <head>
     <title>RecuLleida Construcci&#243;</title>
-    <meta name="description" content="Reculleida en construcci&#243;, Asociaci&#243; d&#39;empreses de reciclatge de Lleida">
-    <meta name="keywords" content="Inici, reciclatge, Lleida, Twitter, @RecuLleida, RecuLleida">
-    <meta name="copyright" content="Associaci&#243; RecuLleida">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="robots" content="Index,Follow">
-
-    <meta name="Author" content="Iv&#224;">
-    <META NAME="REPLY-TO" CONTENT="iva@eucatra.net">
+    <!-- Meta tags -->
+    <meta name='subtitle' content='Asociaci&#243; d&#39;empreses de reciclatge de Lleida'/>
+    <meta name="description" content="Reculleida, Asociaci&#243; d&#39;empreses de reciclatge de Lleida"/>
+    <meta name='target' content='all'/>
+    <meta name='HandheldFriendly' content='True'/>
+    <meta name="keywords" content="reciclatge, Lleida, Catalunya, Twitter, @RecuLleida, RecuLleida, chatarra, ferralla, gestió de residus, gestió de residus integral, paper, cartró, plastics, metalls, desballestaments, residus especials, fusta, chatarra, ferralla, gestió de residus, gestió de residus integral, paper, cartró, plastics, metalls, desballestaments, residus especials, fusta">
+    <meta name="copyright" content="Associaci&#243; RecuLleida"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Language" content="catalan"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="robots" content="Index,Follow"/>
+    <meta name='url' content='http://www.reculleida.org'>
+    <meta name="theme-color" content="#B98F00"/>
+    <meta name="Author" content="Iv&#224; Domingo, iva@eucatra.net">
+    <meta name='designer' content='Iv&#224; Domingo, iva@iva.cat'>
+    <!-- Meta Tags: Open Graph protocol -->
+    <meta property="og:title" content="Reculleida"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.reculleida.org/"/>
+    <meta property="og:image" content="http://www.reculleida.org/img/Logo.png"/>
+    <meta property="og:site_name" content="Reculleida"/>
+    <meta property="og:description" content="Asociaci&#243; d&#39;empreses de reciclatge de Lleida"/>
+    <meta property="og:locale" content="ca_ES" />
+    <!-- Icons -->
     <link rel="icon" href="./img/favicon.png" sizes="16x16" type="image/png">
     <link rel="icon" href="./img/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
     <link rel="shortcut icon" href="./img/favicon.png"/>
     <link rel="apple-touch-icon" href="./img/favicon.png"/>
+    <!-- It executes js after page is loaded -->
     <script type="text/javascript">
         function downloadJSAtOnload() {
             var element = document.createElement("script");
@@ -28,11 +44,32 @@
             window.attachEvent("onload", downloadJSAtOnload);
         else window.onload = downloadJSAtOnload;
     </script>
+    <link rel="stylesheet" type="text/css" href="./css/theme.min.css">
+
 </head>
 
-<body>
+<body style="padding-top:70px;padding-bottom:85px;background-color:white;">
+<!-- Deferred Styles -->
+<noscript id="deferred-styles">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</noscript>
+<!-- Charge Styles -->
+<script>
+    var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement);
+        addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+    else window.addEventListener('load', loadDeferredStyles);
+</script>
+
 <!-- Menu Superior -->
-<header class="container-fluid navbar-fixed-top">
+<header class="navbar-fixed-top">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -140,7 +177,5 @@
 <!-- Scripts and CSS -->
 <script src="./js/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="./css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="./css/style.css">
 
 </html>
