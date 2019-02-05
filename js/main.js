@@ -29,7 +29,7 @@ if(document.title == "RecuLleida") {
     });
 }
 
-if(document.title == "RecuLleida Contacte"){
+/*if(document.title == "RecuLleida Contacte"){
     $(document).ready( function() {
         $("#formulari").submit(function(){
             var url = "./sendMail.php";
@@ -45,7 +45,7 @@ if(document.title == "RecuLleida Contacte"){
             return false;
         });
     });
-}
+}*/
 
 
 
